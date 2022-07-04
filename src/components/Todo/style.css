@@ -1,0 +1,125 @@
+li,
+.overlap{
+    height: 60px;
+    background: #ffffff;
+    list-style: none;
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    padding: 0px 1rem;
+    color: #013b21d9;
+    font-weight: 500;
+    border: 1px solid #054629b1;
+    /* box-shadow: -3px 3px 6px 3px #ccc; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.TodoText {
+    font-size: 1rem;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+
+}
+
+.EditTodoInput {
+    white-space: no-wrap;
+    min-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+
+}
+.overlap {
+    outline: 1px solid#789b8ad9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 4fr .5fr 1fr;
+}
+.overlap > span{
+    cursor: pointer;
+    display: grid;   
+}
+.EditTodo,
+.RemoveTodo {
+        height: 30px;
+        width: 30px;
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+}
+
+    .EditTodoSave,
+    .EditTodoCancel{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 2px;
+    }
+li:not(.overlap) > span + span :hover{
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+}
+.EditTodoInput {
+    border: 0;
+    height: 25px;
+    font-size: 1.0rem;
+    padding: .1rem .5rem;
+    border: 1px solid #054629b1;
+    box-shadow: 
+       inset 0px 0px 1px 1px #054629a3,
+        0px 0px 6px 2px #05462937;
+    border-radius: 5px;
+    width: 80%;
+    font-weight: bold;
+    color: #013b21d9;
+}
+.EditTodoInput:focus {
+    border: 0;
+    outline: none;
+    height: 25px;
+    font-size: 1.0rem;
+    padding: .1rem .5rem;
+    border: 2px solid #054629b1;
+    
+}
+
+.EditTodo {
+    color: #074227d9;
+}
+.RemoveTodo {
+    color: rgb(166, 35, 79);
+}
+.EditTodo:hover, .RemoveTodo:hover {
+    opacity: .7;
+}
+ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    width: 60%;
+    overflow: none;
+}
+.EmptyTodoList {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: #005a31d9;
+}

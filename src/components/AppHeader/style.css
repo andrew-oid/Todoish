@@ -1,0 +1,65 @@
+.TodoList {
+    background: #074227d9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.TodoListInput {
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: .2rem .5rem;
+    color: #013b21d9;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+/* @media screen and (max-width: 768px) {
+    .TodoHeader {
+        height: 30%;
+        color: #3b011fd9;
+        background: #074227d9;
+        position: absolute;
+        left: 5rem;
+    }
+} */
+@media screen and ( max-width: 768px) {
+    .TodoHeader {
+        position: absolute;
+        top: 0;
+        height: 30%;
+        display: grid;
+        place-items: center;
+        color: #b7c7c0d9;
+    }
+}
+@media screen and ( min-width: 769px){
+    .TodoHeader {
+        position: absolute;
+        left: 5rem;
+        height: 30%;
+        display: grid;
+        place-items: center;
+        color: #b7c7c0d9;
+    }
+}
+.TodoListInput:focus {
+    outline: 2px solid #0b663dd9;
+}
+.TodoListInput, .TodoListButton {
+    height: 30px;
+}
+.TodoListButton {
+    height: 26px;
+    outline: 2px solid #fff;
+    box-sizing: border-box;
+    padding: .3rem 1rem;
+    color: rgb(255, 255, 255);
+    display: grid;
+    line-height: 15px;
+    cursor: pointer;
+}

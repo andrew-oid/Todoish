@@ -1,0 +1,7 @@
+.App {
+    background: #e6e7ee;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    grid-template-rows:2fr 6fr;
+}
